@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import {
   Server,
   Zap,
@@ -11,33 +8,32 @@ import {
   Terminal,
   Code,
 } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 const features = [
   {
     icon: Server,
     title: "Multi-Server",
-    description: "Connect to multiple local endpoints simultaneously. Aggregate models from different sources.",
+    description: "Connect to multiple local endpoints. Models auto-aggregate from different sources.",
   },
   {
     icon: Zap,
     title: "Streaming",
-    description: "Token-by-token responses with live TK/S counter. Watch AI think in real-time.",
+    description: "Token-by-token responses with live TK/S counter.",
   },
   {
     icon: Shield,
     title: "Zero Telemetry",
-    description: "Your data never leaves your machine. No analytics, no tracking, no cloud dependency.",
+    description: "No analytics, no tracking, no cloud dependency. Your data stays local.",
   },
   {
     icon: Lock,
     title: "PIN + Encryption",
-    description: "PBKDF2 key derivation with AES-256-GCM encryption for all local configuration.",
+    description: "PBKDF2 key derivation with AES-256-GCM encryption at rest.",
   },
   {
     icon: Cpu,
     title: "8 Providers",
-    description: "Ollama, llama.cpp, LM Studio, vLLM, Anthropic Claude, Google Gemini, OpenAI, and more.",
+    description: "Ollama, llama.cpp, LM Studio, vLLM, Claude, Gemini, OpenAI, and more.",
   },
   {
     icon: GitBranch,
@@ -46,68 +42,41 @@ const features = [
   },
   {
     icon: Terminal,
-    title: "Tool Calling",
-    description: "14 built-in tools: file I/O, bash, search, install, web fetch, and more.",
+    title: "14 Built-in Tools",
+    description: "File I/O, bash, search, install, web fetch, package management, and more.",
   },
   {
     icon: Code,
     title: "MIT Licensed",
-    description: "Fully open source. Use, modify, and distribute freely. No restrictions.",
+    description: "Fully open source. Use, modify, and distribute freely.",
   },
 ];
 
 export function Features() {
   return (
-    <section className="py-24 px-6 bg-neutral-950/50" id="features">
-      <div className="max-w-6xl mx-auto">
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold">Built for Privacy & Power</h2>
-          <p className="mt-4 text-neutral-400 max-w-2xl mx-auto">
-            Every feature designed with security and performance in mind. Your AI, your data, your control.
-          </p>
-        </motion.div>
+    <section className="py-20 px-6 border-t border-[var(--border)]" id="features">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-2xl font-bold mb-2">Features</h2>
+        <p className="text-[var(--text-muted)] text-sm mb-10">
+          Built for privacy and power. Your AI, your data, your control.
+        </p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {features.map((feature, index) => (
-            <FeatureCard key={feature.title} feature={feature} index={index} />
-          ))}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {features.map((feature) => {
+            const Icon = feature.icon;
+            return (
+              <div
+                key={feature.title}
+                className="p-4 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] transition-colors"
+              >
+                <Icon className="w-4 h-4 text-[var(--accent)] mb-3" />
+                <h3 className="text-sm font-medium text-[var(--text)] mb-1">{feature.title}</h3>
+                <p className="text-xs text-[var(--text-muted)] leading-relaxed">{feature.description}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
-  );
-}
-
-function FeatureCard({
-  feature,
-  index,
-}: {
-  feature: (typeof features)[0];
-  index: number;
-}) {
-  const Icon = feature.icon;
-
-  return (
-    <motion.div
-      className={cn(
-        "group p-5 rounded-xl border border-neutral-800 bg-neutral-900/50",
-        "hover:border-neutral-700 hover:bg-neutral-900 transition-all duration-300"
-      )}
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
-    >
-      <div className="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center mb-4 group-hover:bg-neutral-700 transition-colors">
-        <Icon className="w-5 h-5 text-neutral-300" />
-      </div>
-      <h3 className="font-semibold text-white mb-2">{feature.title}</h3>
-      <p className="text-sm text-neutral-400 leading-relaxed">{feature.description}</p>
-    </motion.div>
   );
 }

@@ -1,5 +1,5 @@
-import { Github, FileText, Shield, Heart } from "lucide-react";
-import { Logo } from "@/components/logo";
+import Image from "next/image";
+import { Github } from "lucide-react";
 
 const repos = [
   { name: "LlamaChat v1", href: "https://github.com/ItsTrag1c/LlamaTalk-Desktop" },
@@ -7,41 +7,36 @@ const repos = [
   { name: "LlamaTalk Build", href: "https://github.com/ItsTrag1c/LlamaTalk-Build" },
 ];
 
-const legal = [
-  { name: "Privacy Policy", href: "/privacy-policy.pdf", icon: Shield },
-  { name: "MIT License", href: "/LICENSE", icon: FileText },
-];
-
 export function Footer() {
   return (
-    <footer className="border-t border-neutral-800 py-12 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+    <footer className="border-t border-[var(--border)] py-10 px-6">
+      <div className="max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row items-start justify-between gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <Logo size={32} />
-              <span className="font-semibold text-white">LlamaTalk</span>
+            <div className="flex items-center gap-2 mb-3">
+              <Image src="/llama.png" alt="LlamaTalk" width={20} height={20} className="rounded" />
+              <span className="text-sm font-medium text-[var(--text)]">LlamaTalk Suite</span>
             </div>
-            <p className="text-sm text-neutral-500 leading-relaxed">
-              AI chat suite by ItsTrag1c. Built with privacy in mind. Local-first, zero telemetry, fully open source.
+            <p className="text-xs text-[var(--text-dim)] max-w-xs leading-relaxed">
+              Local-first AI chat by ItsTrag1c. Zero telemetry, full encryption, open source.
             </p>
           </div>
 
-          {/* Repositories */}
+          {/* Repos */}
           <div>
-            <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
-              <Github className="w-4 h-4" />
+            <h4 className="text-xs font-medium text-[var(--text-muted)] mb-3 flex items-center gap-1.5">
+              <Github className="w-3 h-3" />
               Repositories
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-1.5">
               {repos.map((repo) => (
                 <li key={repo.name}>
                   <a
                     href={repo.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-neutral-400 hover:text-white transition-colors"
+                    className="text-xs text-[var(--text-dim)] hover:text-[var(--text)] transition-colors"
                   >
                     {repo.name}
                   </a>
@@ -49,35 +44,14 @@ export function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Legal */}
-          <div>
-            <h4 className="font-semibold text-white mb-4">Legal</h4>
-            <ul className="space-y-2">
-              {legal.map((item) => {
-                const Icon = item.icon;
-                return (
-                  <li key={item.name}>
-                    <a
-                      href={item.href}
-                      className="text-sm text-neutral-400 hover:text-white transition-colors flex items-center gap-2"
-                    >
-                      <Icon className="w-3 h-3" />
-                      {item.name}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
         </div>
 
-        <div className="pt-8 border-t border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-neutral-600">
-            © 2025–2026 ItsTrag1c. All rights reserved.
+        <div className="pt-6 border-t border-[var(--border)] flex items-center justify-between">
+          <p className="text-xs text-[var(--text-dim)]">
+            &copy; 2025&ndash;2026 ItsTrag1c
           </p>
-          <p className="text-xs text-neutral-600 flex items-center gap-1">
-            Made with <Heart className="w-3 h-3 text-red-500 fill-current" /> and local AI
+          <p className="text-xs text-[var(--text-dim)]">
+            MIT License
           </p>
         </div>
       </div>

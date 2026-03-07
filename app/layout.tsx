@@ -13,19 +13,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LlamaTalk Suite — AI Chat for Power Users",
-  description: "Three apps. One ecosystem. Local-first AI chat with zero telemetry. LlamaChat v1, LlamaTalk CLI, and LlamaTalk Build.",
+  title: "LlamaTalk Suite",
+  description: "Three apps. One ecosystem. Local-first AI chat with zero telemetry.",
   keywords: ["AI chat", "local AI", "Ollama", "Claude", "OpenAI", "terminal", "coding assistant"],
   authors: [{ name: "ItsTrag1c" }],
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
-    title: "LlamaTalk Suite — AI Chat for Power Users",
+    title: "LlamaTalk Suite",
     description: "Local-first AI chat suite. Zero telemetry. MIT licensed.",
     type: "website",
   },
   twitter: {
     card: "summary",
     title: "LlamaTalk Suite",
-    description: "AI Chat for Power Users. Local-first. Zero telemetry.",
+    description: "Local-first AI chat suite. Zero telemetry. MIT licensed.",
   },
 };
 

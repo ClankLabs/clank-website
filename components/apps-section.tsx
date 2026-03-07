@@ -1,11 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Download, ExternalLink, Monitor, Terminal, Wrench } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Monitor, Terminal, Wrench, ExternalLink, Download } from "lucide-react";
 import { APP_DATA, VERSIONS, getDownloadUrl, type AppKey } from "@/lib/versions";
-import { cn } from "@/lib/utils";
 
 const icons = {
   chat: Monitor,
@@ -13,50 +9,18 @@ const icons = {
   build: Wrench,
 };
 
-const colorClasses = {
-  chat: {
-    border: "border-indigo-500/30",
-    bg: "from-indigo-500/10 to-violet-500/10",
-    accent: "bg-indigo-500",
-    text: "text-indigo-400",
-    glow: "group-hover:shadow-indigo-500/20",
-  },
-  cli: {
-    border: "border-emerald-500/30",
-    bg: "from-emerald-500/10 to-teal-500/10",
-    accent: "bg-emerald-500",
-    text: "text-emerald-400",
-    glow: "group-hover:shadow-emerald-500/20",
-  },
-  build: {
-    border: "border-amber-500/30",
-    bg: "from-amber-500/10 to-orange-500/10",
-    accent: "bg-amber-500",
-    text: "text-amber-400",
-    glow: "group-hover:shadow-amber-500/20",
-  },
-};
-
 export function AppsSection() {
   return (
-    <section className="py-24 px-6" id="apps">
-      <div className="max-w-6xl mx-auto">
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold">Three Apps. One Ecosystem.</h2>
-          <p className="mt-4 text-neutral-400 max-w-2xl mx-auto">
-            Choose the interface that fits your workflow. All apps share the same providers, settings, and zero-telemetry philosophy.
-          </p>
-        </motion.div>
+    <section className="py-20 px-6" id="apps">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-2xl font-bold mb-2">The Suite</h2>
+        <p className="text-[var(--text-muted)] text-sm mb-10">
+          Three interfaces, same ecosystem. Pick what fits your workflow.
+        </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {(Object.keys(APP_DATA) as AppKey[]).map((key, index) => (
-            <AppCard key={key} appKey={key} index={index} />
+        <div className="grid md:grid-cols-3 gap-4">
+          {(Object.keys(APP_DATA) as AppKey[]).map((key) => (
+            <AppCard key={key} appKey={key} />
           ))}
         </div>
       </div>
@@ -64,65 +28,58 @@ export function AppsSection() {
   );
 }
 
-function AppCard({ appKey, index }: { appKey: AppKey; index: number }) {
+function AppCard({ appKey }: { appKey: AppKey }) {
   const app = APP_DATA[appKey];
   const version = VERSIONS[appKey];
-  const colors = colorClasses[appKey];
   const Icon = icons[appKey];
 
   return (
-    <motion.div
-      className={cn(
-        "group relative rounded-xl border bg-gradient-to-b p-6 transition-all duration-300",
-        "hover:shadow-lg hover:shadow-black/50",
-        colors.border,
-        colors.bg,
-        colors.glow
-      )}
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-    >
-      <div className="flex items-start justify-between mb-4">
-        <div className={cn("w-12 h-12 rounded-lg flex items-center justify-center", colors.accent)}>
-          <Icon className="w-6 h-6 text-white" />
-        </div>
-        <Badge variant="secondary" className="bg-black/30 text-neutral-300">
-          v{version}
-        </Badge>
-      </div>
-
-      <h3 className="text-xl font-semibold text-white mb-2">{app.name}</h3>
-      <p className={cn("text-sm font-medium mb-3", colors.text)}>{app.tagline}</p>
-      <p className="text-sm text-neutral-400 mb-6">{app.description}</p>
-
-      <div className="space-y-2 mb-6">
-        {app.features.map((feature) => (
-          <div key={feature} className="flex items-center gap-2 text-sm text-neutral-300">
-            <div className={cn("w-1.5 h-1.5 rounded-full", colors.accent)} />
-            {feature}
+    <div className="group rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] transition-colors">
+      <div className="p-5">
+        {/* Header */}
+        <div className="flex items-start justify-between mb-4">
+          <div className="w-10 h-10 rounded-lg bg-[var(--accent)]/10 border border-[var(--accent)]/20 flex items-center justify-center">
+            <Icon className="w-5 h-5 text-[var(--accent)]" />
           </div>
-        ))}
-      </div>
+          <span className="text-xs text-[var(--text-dim)] font-mono">v{version}</span>
+        </div>
 
-      <div className="flex gap-3">
-        <Button
-          size="sm"
-          className={cn("flex-1 text-white", colors.accent, "hover:opacity-90")}
-          asChild
-        >
-          <a href={getDownloadUrl(appKey)}>
-            <Download className="w-4 h-4 mr-2" />
+        {/* Content */}
+        <h3 className="font-semibold text-[var(--text)] mb-1">{app.name}</h3>
+        <p className="text-sm text-[var(--accent)] mb-3">{app.tagline}</p>
+        <p className="text-sm text-[var(--text-muted)] leading-relaxed mb-5">{app.description}</p>
+
+        {/* Features */}
+        <div className="flex flex-wrap gap-1.5 mb-5">
+          {app.features.map((feature) => (
+            <span
+              key={feature}
+              className="px-2 py-0.5 text-xs rounded-md bg-[var(--surface-2)] text-[var(--text-muted)] border border-[var(--border)]"
+            >
+              {feature}
+            </span>
+          ))}
+        </div>
+
+        {/* Actions */}
+        <div className="flex gap-2">
+          <a
+            href={getDownloadUrl(appKey)}
+            className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-medium rounded-md bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-white transition-colors"
+          >
+            <Download className="w-3.5 h-3.5" />
             Download
           </a>
-        </Button>
-        <Button size="sm" variant="outline" className="border-neutral-700 hover:bg-neutral-800" asChild>
-          <a href={`https://github.com/${app.github}`} target="_blank" rel="noopener noreferrer">
-            <ExternalLink className="w-4 h-4" />
+          <a
+            href={`https://github.com/${app.github}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-3 py-2 text-xs rounded-md border border-[var(--border)] hover:border-[var(--border-hover)] hover:bg-[var(--surface-2)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
+          >
+            <ExternalLink className="w-3.5 h-3.5" />
           </a>
-        </Button>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
