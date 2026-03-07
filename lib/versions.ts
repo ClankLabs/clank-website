@@ -1,7 +1,7 @@
 export const VERSIONS = {
   chat: "0.16.0",
   cli: "0.9.12",
-  build: "0.9.19",
+  build: "2.0.0",
 } as const;
 
 export type AppKey = keyof typeof VERSIONS;
