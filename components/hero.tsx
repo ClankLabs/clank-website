@@ -27,7 +27,7 @@ export function Hero() {
         <p className="mt-4 text-lg text-[var(--text-muted)] max-w-xl mx-auto leading-relaxed">
           Built for local models. Zero telemetry. Full encryption. An agentic
           coding assistant and companion tools that put you in control — with
-          optional cloud providers when you need them.
+          optional cloud API support if you need it.
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
