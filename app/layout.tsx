@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://llamatalksuite.dev"),
-  title: "LlamaTalk Suite — AI Tools That Never Phone Home",
+  title: "LlamaTalk Suite — AI Tools, Your Data, Your Rules",
   description: "Local-first agentic coding assistant and companion tools. Zero telemetry, full encryption, 8 providers.",
   keywords: ["AI coding assistant", "local AI", "agentic coding", "Ollama", "Claude", "OpenAI", "terminal", "zero telemetry", "private AI"],
   authors: [{ name: "ItsTrag1c" }],
@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "LlamaTalk Suite — AI Tools That Never Phone Home",
+    title: "LlamaTalk Suite — AI Tools, Your Data, Your Rules",
     description: "Local-first agentic coding assistant and companion tools. Zero telemetry. MIT licensed.",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "LlamaTalk Suite — AI Tools That Never Phone Home",
+    title: "LlamaTalk Suite — AI Tools, Your Data, Your Rules",
     description: "Local-first agentic coding assistant and companion tools. Zero telemetry. MIT licensed.",
   },
 };
