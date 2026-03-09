@@ -2,7 +2,7 @@ export const VERSIONS = {
   chat: "0.16.1",
   cli: "0.9.13",
   build: "2.1.2",
-  buildDesktop: "2.1.1",
+  buildDesktop: "2.1.2",
 } as const;
 
 export type AppKey = keyof typeof VERSIONS;
@@ -46,7 +46,7 @@ export function getDownloadUrl(app: AppKey, type: "installer" | "standalone" = "
   const version = VERSIONS[app];
   const repo = APP_DATA[app].github;
   // Build Desktop releases are on the Build repo (same release includes CLI + Desktop)
-  const releaseTag = app === "buildDesktop" ? `desktop-v${version}` : `v${version}`;
+  const releaseTag = `v${app === "buildDesktop" ? VERSIONS.build : version}`;
   const base = `https://github.com/${repo}/releases/download/${releaseTag}`;
 
   if (app === "chat") {
