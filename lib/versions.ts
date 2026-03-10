@@ -1,7 +1,7 @@
 export const VERSIONS = {
   chat: "0.16.1",
   cli: "0.9.13",
-  build: "2.3.7",
+  build: "2.3.8",
   buildDesktop: "2.3.0",
 } as const;
 
