@@ -1,8 +1,8 @@
 export const VERSIONS = {
   chat: "0.16.1",
   cli: "0.9.13",
-  build: "2.4.0",
-  buildDesktop: "2.3.0",
+  build: "2.5.0",
+  buildDesktop: "2.4.0",
 } as const;
 
 export type AppKey = keyof typeof VERSIONS;
@@ -27,18 +27,18 @@ export const APP_DATA = {
   build: {
     name: "LlamaTalk Build CLI",
     tagline: "Agentic coding from the terminal",
-    description: "A ReAct-style coding agent with 14 tools, self-learning memory, plan/build/recall modes, and Telegram integration. Reads, writes, and executes — so you can focus on the problem, not the plumbing.",
+    description: "A ReAct-style coding agent with manager/sub-agent architecture, 14 tools, self-learning memory, 4 modes (Build, Plan, Q&A, Manage), and Telegram integration. Reads, writes, and executes — so you can focus on the problem, not the plumbing.",
     color: "build",
     github: "ItsTrag1c/LlamaTalk-Build",
-    features: ["14 Tools", "ReAct Agent", "Telegram Bot", "Self-Learning"],
+    features: ["Sub-Agents", "4 Modes", "14 Tools", "ReAct Agent", "Telegram Bot", "Self-Learning"],
   },
   buildDesktop: {
     name: "LlamaTalk Build Desktop",
     tagline: "Agentic coding with a desktop GUI",
-    description: "The LlamaTalk Build agent wrapped in a desktop interface with a home dashboard, onboarding, and Telegram settings. All the same tools and capabilities, with a visual experience.",
+    description: "The LlamaTalk Build agent wrapped in a desktop interface with agent management, 4 modes, a home dashboard, onboarding, and Telegram settings. All the same tools and capabilities, with a visual experience.",
     color: "build",
     github: "ItsTrag1c/LlamaTalk-Build",
-    features: ["Desktop GUI", "ReAct Agent", "Home Dashboard", "14 Tools"],
+    features: ["Agent Management", "4 Modes", "Desktop GUI", "ReAct Agent", "Home Dashboard", "14 Tools"],
   },
 } as const;
 
