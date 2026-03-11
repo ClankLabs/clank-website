@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Github } from "lucide-react";
 
 const repos = [
-  { name: "LlamaTalk Chat", href: "https://github.com/ItsTrag1c/LlamaTalk-Chat" },
-  { name: "LlamaTalk Build", href: "https://github.com/ItsTrag1c/LlamaTalk-Build" },
+  { name: "Clank Chat", href: "https://github.com/ItsTrag1c/Clank-Chat" },
+  { name: "Clank Build", href: "https://github.com/ItsTrag1c/Clank-Build" },
 ];
 
 export function Footer() {
@@ -14,8 +14,8 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-start justify-between gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <Image src="/llama.png" alt="LlamaTalk" width={20} height={20} className="rounded" />
-              <span className="text-sm font-medium text-[var(--text)]">LlamaTalk Suite</span>
+              <Image src="/llama.png" alt="Clank" width={20} height={20} className="rounded" />
+              <span className="text-sm font-medium text-[var(--text)]">Clank Suite</span>
             </div>
             <p className="text-xs text-[var(--text-dim)] max-w-xs leading-relaxed">
               Local-first AI tools by ItsTrag1c. Zero telemetry, full encryption, open source.

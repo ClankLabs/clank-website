@@ -1,6 +1,6 @@
 {
-  "name": "LlamaTalk Suite",
-  "short_name": "LlamaTalk",
+  "name": "Clank Suite",
+  "short_name": "Clank",
   "description": "Local-first AI tools. Your data, your rules.",
   "start_url": "/",
   "display": "browser",

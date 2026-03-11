@@ -9,35 +9,35 @@ export type AppKey = keyof typeof VERSIONS;
 
 export const APP_DATA = {
   chat: {
-    name: "LlamaTalk Chat",
+    name: "Clank Chat",
     tagline: "Desktop GUI for conversations",
     description: "Frameless desktop window with a floating assistant overlay and system tray. Available on Windows and macOS.",
     color: "chat",
-    github: "ItsTrag1c/LlamaTalk-Chat",
+    github: "ItsTrag1c/Clank-Chat",
     features: ["Frameless UI", "Floating Assistant", "System Tray", "Windows & macOS"],
   },
   cli: {
-    name: "LlamaTalk Chat CLI",
+    name: "Clank Chat CLI",
     tagline: "Quick answers from the terminal",
     description: "Lightweight REPL and one-shot mode. Ask a question without leaving your shell — no agent overhead, just fast answers.",
     color: "cli",
-    github: "ItsTrag1c/LlamaTalk-Chat",
+    github: "ItsTrag1c/Clank-Chat",
     features: ["REPL Mode", "One-shot Mode", "Streaming Output", "8 Providers"],
   },
   build: {
-    name: "LlamaTalk Build CLI",
+    name: "Clank Build CLI",
     tagline: "Agentic coding from the terminal",
     description: "A ReAct-style coding agent with manager/sub-agent architecture, 14 tools, self-learning memory, 4 modes (Build, Plan, Q&A, Manage), and Telegram integration. Reads, writes, and executes — so you can focus on the problem, not the plumbing.",
     color: "build",
-    github: "ItsTrag1c/LlamaTalk-Build",
+    github: "ItsTrag1c/Clank-Build",
     features: ["Sub-Agents", "4 Modes", "14 Tools", "ReAct Agent", "Telegram Bot", "Self-Learning"],
   },
   buildDesktop: {
-    name: "LlamaTalk Build Desktop",
+    name: "Clank Build Desktop",
     tagline: "Agentic coding with a desktop GUI",
-    description: "The LlamaTalk Build agent wrapped in a desktop interface with agent management, 4 modes, a home dashboard, onboarding, and Telegram settings. All the same tools and capabilities, with a visual experience.",
+    description: "The Clank Build agent wrapped in a desktop interface with agent management, 4 modes, a home dashboard, onboarding, and Telegram settings. All the same tools and capabilities, with a visual experience.",
     color: "build",
-    github: "ItsTrag1c/LlamaTalk-Build",
+    github: "ItsTrag1c/Clank-Build",
     features: ["Agent Management", "4 Modes", "Desktop GUI", "ReAct Agent", "Home Dashboard", "14 Tools"],
   },
 } as const;
@@ -51,25 +51,25 @@ export function getDownloadUrl(app: AppKey, type: "installer" | "standalone" = "
 
   if (app === "chat") {
     if (platform === "mac") {
-      return `${base}/LlamaTalk.Chat_${version}_aarch64.dmg`;
+      return `${base}/Clank.Chat_${version}_aarch64.dmg`;
     }
     return type === "installer"
-      ? `${base}/LlamaTalk.Chat_${version}_x64-setup.exe`
-      : `${base}/LlamaTalk.Chat_${version}_x64-setup.exe`;
+      ? `${base}/Clank.Chat_${version}_x64-setup.exe`
+      : `${base}/Clank.Chat_${version}_x64-setup.exe`;
   }
 
   if (app === "buildDesktop") {
     if (platform === "mac") {
-      return `${base}/LlamaTalk.Build.Desktop_${version}_aarch64.dmg`;
+      return `${base}/Clank.Build.Desktop_${version}_aarch64.dmg`;
     }
     return type === "installer"
-      ? `${base}/LlamaTalk.Build.Desktop_${version}_x64-setup.exe`
-      : `${base}/LlamaTalk.Build.Desktop_${version}_x64-setup.exe`;
+      ? `${base}/Clank.Build.Desktop_${version}_x64-setup.exe`
+      : `${base}/Clank.Build.Desktop_${version}_x64-setup.exe`;
   }
 
-  const name = app === "cli" ? "LlamaTalkCLI" : "LlamaTalkBuild";
+  const name = app === "cli" ? "ClankCLI" : "ClankBuild";
   return type === "installer"
-    ? `${base}/${name === "LlamaTalkCLI" ? "LlamaTalk.CLI" : "LlamaTalk.Build"}_${version}_setup.exe`
+    ? `${base}/${name === "ClankCLI" ? "Clank.CLI" : "Clank.Build"}_${version}_setup.exe`
     : `${base}/${name}_${version}.exe`;
 }
 

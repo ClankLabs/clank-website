@@ -3,8 +3,8 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — LlamaTalk Suite",
-  description: "Privacy policy for LlamaTalk Suite applications and website.",
+  title: "Privacy Policy — Clank Suite",
+  description: "Privacy policy for Clank Suite applications and website.",
 };
 
 export default function PrivacyPolicy() {
@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
               Overview
             </h2>
             <p>
-              LlamaTalk Suite is built on a simple principle:{" "}
+              Clank Suite is built on a simple principle:{" "}
               <strong className="text-[var(--text)]">your data stays on your machine</strong>.
               Our desktop and CLI applications do not collect telemetry, usage
               analytics, or personal information of any kind.
@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="text-lg font-semibold text-[var(--text)] mb-3">
-              LlamaTalk Applications
+              Clank Applications
             </h2>
             <ul className="list-disc list-inside space-y-2">
               <li>
@@ -73,7 +73,7 @@ export default function PrivacyPolicy() {
               This Website
             </h2>
             <p>
-              This website (llamatalksuite.dev) is a static site hosted on
+              This website (clanksuite.dev) is a static site hosted on
               Vercel. We do not use cookies, analytics scripts, or tracking
               pixels. Vercel may collect standard server logs (IP address,
               browser user agent, page requested) as part of hosting
@@ -114,7 +114,7 @@ export default function PrivacyPolicy() {
               Children&apos;s Privacy
             </h2>
             <p>
-              LlamaTalk Suite is not directed at children under 13. We do not
+              Clank Suite is not directed at children under 13. We do not
               knowingly collect any personal information from anyone, including
               children.
             </p>
@@ -137,7 +137,7 @@ export default function PrivacyPolicy() {
             <p>
               Questions about this policy? Open an issue on{" "}
               <a
-                href="https://github.com/ItsTrag1c/LlamaTalk-Chat/issues"
+                href="https://github.com/ItsTrag1c/Clank-Chat/issues"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[var(--accent)] hover:underline"

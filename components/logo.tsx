@@ -4,7 +4,7 @@ export function Logo({ size = 40, className = "" }: { size?: number; className?:
   return (
     <Image
       src="/llama.png"
-      alt="LlamaTalk"
+      alt="Clank"
       width={size}
       height={size}
       className={`rounded-lg ${className}`}
