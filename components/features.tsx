@@ -6,7 +6,7 @@ import {
   Cpu,
   GitBranch,
   Terminal,
-  Code,
+  Users,
   Send,
   Sparkles,
 } from "lucide-react";
@@ -58,9 +58,9 @@ const features = [
     description: "File I/O, bash, search, install, web fetch, package management, and more.",
   },
   {
-    icon: Code,
-    title: "MIT Licensed",
-    description: "Fully open source. Use, modify, and distribute freely.",
+    icon: Users,
+    title: "Sub Agents",
+    description: "Delegate tasks to specialized sub-agents with their own roles, tools, and context.",
   },
 ];
 
