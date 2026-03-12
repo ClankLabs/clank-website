@@ -11,7 +11,7 @@ export const APP_DATA = {
     tagline: "Agentic coding from the terminal",
     description: "A ReAct-style coding agent with 14 tools, self-learning memory, 4 modes (Build, Plan, Q&A, Manage), and Telegram integration. Reads, writes, and executes — so you can focus on the problem, not the plumbing.",
     color: "build",
-    github: "ItsTrag1c/Clank-Build",
+    github: "ItsTrag1c/Clank",
     features: ["4 Modes", "14 Tools", "ReAct Agent", "Telegram Bot", "Self-Learning"],
   },
   desktop: {
@@ -19,7 +19,7 @@ export const APP_DATA = {
     tagline: "Agentic coding with a desktop GUI",
     description: "The Clank agent wrapped in a desktop interface with agent management, 4 modes, a home dashboard, onboarding, and Telegram settings. All the same tools and capabilities, with a visual experience.",
     color: "build",
-    github: "ItsTrag1c/Clank-Build",
+    github: "ItsTrag1c/Clank",
     features: ["Agent Management", "4 Modes", "Desktop GUI", "ReAct Agent", "Home Dashboard", "14 Tools"],
   },
 } as const;
