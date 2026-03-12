@@ -14,10 +14,10 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <Image src="/llama.png" alt="Clank" width={20} height={20} className="rounded" />
-              <span className="text-sm font-medium text-[var(--text)]">Clank Suite</span>
+              <span className="text-sm font-medium text-[var(--text)]">Clank</span>
             </div>
             <p className="text-xs text-[var(--text-dim)] max-w-xs leading-relaxed">
-              Local-first AI tools by ItsTrag1c. Zero telemetry, full encryption, open source.
+              Agentic coding assistant. Local-first, zero telemetry.
             </p>
           </div>
 

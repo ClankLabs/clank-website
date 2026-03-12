@@ -3,8 +3,8 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Clank Suite",
-  description: "Privacy policy for Clank Suite applications and website.",
+  title: "Privacy Policy — Clank",
+  description: "Privacy policy for Clank applications and website.",
 };
 
 export default function PrivacyPolicy() {
@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
               Overview
             </h2>
             <p>
-              Clank Suite is built on a simple principle:{" "}
+              Clank is built on a simple principle:{" "}
               <strong className="text-[var(--text)]">your data stays on your machine</strong>.
               Our desktop and CLI applications do not collect telemetry, usage
               analytics, or personal information of any kind.
@@ -114,7 +114,7 @@ export default function PrivacyPolicy() {
               Children&apos;s Privacy
             </h2>
             <p>
-              Clank Suite is not directed at children under 13. We do not
+              Clank is not directed at children under 13. We do not
               knowingly collect any personal information from anyone, including
               children.
             </p>

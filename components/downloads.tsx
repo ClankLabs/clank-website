@@ -1,17 +1,15 @@
 "use client";
 
-import { Download, Apple, Monitor } from "lucide-react";
+import { Download, Apple } from "lucide-react";
 import { APP_DATA, VERSIONS, getDownloadUrl, type AppKey } from "@/lib/versions";
-
-const desktopApps = new Set<AppKey>(["desktop"]);
 
 export function Downloads() {
   return (
     <section className="py-20 px-6 border-t border-[var(--border)]" id="download">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-2xl font-bold mb-2">Download</h2>
+        <h2 className="text-2xl font-bold mb-2">Download Clank</h2>
         <p className="text-[var(--text-muted)] text-sm mb-10">
-          Windows and macOS. All downloads include SHA-256 checksums.
+          Choose your interface. All downloads include SHA-256 checksums.
         </p>
 
         <div className="space-y-3">
@@ -21,7 +19,7 @@ export function Downloads() {
         </div>
 
         <p className="mt-6 text-xs text-[var(--text-dim)]">
-          CLI apps are Windows only. Desktop apps are available on Windows and macOS.
+          The CLI is Windows only. The Desktop app is available on Windows and macOS.
         </p>
       </div>
     </section>
@@ -31,7 +29,7 @@ export function Downloads() {
 function DownloadRow({ appKey }: { appKey: AppKey }) {
   const app = APP_DATA[appKey];
   const version = VERSIONS[appKey];
-  const hasMac = desktopApps.has(appKey);
+  const hasMac = appKey === "desktop";
 
   return (
     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-lg border border-[var(--border)] bg-[var(--surface)]">

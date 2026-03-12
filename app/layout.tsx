@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clanksuite.dev"),
-  title: "Clank Suite — AI Tools, Your Data, Your Rules",
-  description: "Local-first agentic coding assistant and companion tools. Zero telemetry, full encryption, 8 providers.",
+  title: "Clank — Agentic Coding Assistant",
+  description: "Local-first agentic coding assistant. 14 tools, self-learning memory, zero telemetry. Terminal or desktop — your choice.",
   keywords: ["AI coding assistant", "local AI", "agentic coding", "Ollama", "Claude", "OpenAI", "terminal", "zero telemetry", "private AI"],
   authors: [{ name: "ItsTrag1c" }],
   icons: {
@@ -30,14 +30,14 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Clank Suite — AI Tools, Your Data, Your Rules",
-    description: "Local-first agentic coding assistant and companion tools. Zero telemetry. MIT licensed.",
+    title: "Clank — Agentic Coding Assistant",
+    description: "Local-first agentic coding assistant. 14 tools, self-learning memory, zero telemetry. Terminal or desktop — your choice.",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Clank Suite — AI Tools, Your Data, Your Rules",
-    description: "Local-first agentic coding assistant and companion tools. Zero telemetry. MIT licensed.",
+    title: "Clank — Agentic Coding Assistant",
+    description: "Local-first agentic coding assistant. 14 tools, self-learning memory, zero telemetry. Terminal or desktop — your choice.",
   },
 };
 

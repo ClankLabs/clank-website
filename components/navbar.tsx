@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Github, Menu, X } from "lucide-react";
 
 const links = [
-  { label: "Apps", href: "#apps" },
+  { label: "About", href: "#about" },
   { label: "Features", href: "#features" },
   { label: "Download", href: "#download" },
 ];
@@ -19,7 +19,7 @@ export function Navbar() {
         <a href="#" className="flex items-center gap-2.5 group">
           <Image src="/llama.png" alt="Clank" width={28} height={28} className="rounded-md" />
           <span className="font-semibold text-[var(--text)] text-sm">
-            Clank <span className="text-[var(--text-muted)] font-normal">Suite</span>
+            Clank
           </span>
         </a>
 

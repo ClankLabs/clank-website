@@ -19,7 +19,7 @@ const features = [
   {
     icon: Send,
     title: "Telegram Bot",
-    description: "Chat with the Build agent from your phone. All tools work, streaming via message edits.",
+    description: "Chat with Clank from your phone. All tools work, streaming via message edits.",
   },
   {
     icon: Server,
@@ -49,7 +49,7 @@ const features = [
   {
     icon: GitBranch,
     title: "Git Aware",
-    description: "Native git operations with safety checks. The Build agent understands your repo.",
+    description: "Native git operations with safety checks. Clank understands your repo.",
   },
   {
     icon: Terminal,

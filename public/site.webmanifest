@@ -1,7 +1,7 @@
 {
-  "name": "Clank Suite",
+  "name": "Clank",
   "short_name": "Clank",
-  "description": "Local-first AI tools. Your data, your rules.",
+  "description": "Local-first agentic coding assistant. 14 tools, self-learning memory, zero telemetry.",
   "start_url": "/",
   "display": "browser",
   "background_color": "#1e1e2e",
