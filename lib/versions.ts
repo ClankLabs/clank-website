@@ -40,6 +40,10 @@ export function getDownloadUrl(app: AppKey, type: "installer" | "standalone" = "
       : `${base}/Clank.Desktop_${version}_x64-setup.exe`;
   }
 
+  if (platform === "mac") {
+    return `${base}/Clank`;
+  }
+
   return type === "installer"
     ? `${base}/Clank_${version}_setup.exe`
     : `${base}/Clank_${version}.exe`;

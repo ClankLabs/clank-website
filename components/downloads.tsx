@@ -19,7 +19,7 @@ export function Downloads() {
         </div>
 
         <p className="mt-6 text-xs text-[var(--text-dim)]">
-          The CLI is Windows only. The Desktop app is available on Windows and macOS.
+          Both apps are available on Windows and macOS.
         </p>
       </div>
     </section>
@@ -29,7 +29,6 @@ export function Downloads() {
 function DownloadRow({ appKey }: { appKey: AppKey }) {
   const app = APP_DATA[appKey];
   const version = VERSIONS[appKey];
-  const hasMac = appKey === "desktop";
 
   return (
     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-lg border border-[var(--border)] bg-[var(--surface)]">
@@ -37,9 +36,7 @@ function DownloadRow({ appKey }: { appKey: AppKey }) {
         <div className="flex items-center gap-2 mb-0.5">
           <h3 className="font-medium text-sm text-[var(--text)]">{app.name}</h3>
           <span className="text-xs font-mono text-[var(--text-dim)]">v{version}</span>
-          {hasMac && (
-            <span className="text-[10px] font-mono text-[var(--text-dim)] border border-[var(--border)] rounded px-1 py-0.5">Win + Mac</span>
-          )}
+          <span className="text-[10px] font-mono text-[var(--text-dim)] border border-[var(--border)] rounded px-1 py-0.5">Win + Mac</span>
         </div>
         <p className="text-xs text-[var(--text-muted)]">{app.tagline}</p>
       </div>
@@ -52,22 +49,13 @@ function DownloadRow({ appKey }: { appKey: AppKey }) {
           <Download className="w-3.5 h-3.5" />
           Windows
         </a>
-        {hasMac ? (
-          <a
-            href={getDownloadUrl(appKey, "installer", "mac")}
-            className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium rounded-md border border-[var(--border)] hover:border-[var(--border-hover)] hover:bg-[var(--surface-2)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
-          >
-            <Apple className="w-3.5 h-3.5" />
-            macOS
-          </a>
-        ) : (
-          <a
-            href={getDownloadUrl(appKey, "standalone", "windows")}
-            className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium rounded-md border border-[var(--border)] hover:border-[var(--border-hover)] hover:bg-[var(--surface-2)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
-          >
-            Standalone
-          </a>
-        )}
+        <a
+          href={getDownloadUrl(appKey, "installer", "mac")}
+          className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-medium rounded-md border border-[var(--border)] hover:border-[var(--border-hover)] hover:bg-[var(--surface-2)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
+        >
+          <Apple className="w-3.5 h-3.5" />
+          macOS
+        </a>
       </div>
     </div>
   );
