@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clanksuite.dev"),
-  title: "Clank — Agentic Coding Assistant",
-  description: "Local-first agentic coding assistant. 14 tools, self-learning memory, zero telemetry. Terminal or desktop — your choice.",
-  keywords: ["AI coding assistant", "local AI", "agentic coding", "Ollama", "Claude", "OpenAI", "terminal", "zero telemetry", "private AI"],
+  title: "Clank — Agentic Assistant",
+  description: "Local-first agentic assistant powered by local models and cloud providers. 14 tools, self-learning memory, zero telemetry. Terminal or desktop — your choice.",
+  keywords: ["AI assistant", "local AI", "agentic assistant", "Ollama", "Claude", "OpenAI", "terminal", "zero telemetry", "private AI"],
   authors: [{ name: "ItsTrag1c" }],
   icons: {
     icon: [
@@ -30,14 +30,16 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Clank — Agentic Coding Assistant",
-    description: "Local-first agentic coding assistant. 14 tools, self-learning memory, zero telemetry. Terminal or desktop — your choice.",
+    title: "Clank — Agentic Assistant",
+    description: "Local-first agentic assistant powered by local models and cloud providers. 14 tools, self-learning memory, zero telemetry. Terminal or desktop — your choice.",
     type: "website",
+    images: [{ url: "/og-banner.png", width: 1500, height: 500, alt: "Clank Suite — Your Code. Your Rules." }],
   },
   twitter: {
-    card: "summary",
-    title: "Clank — Agentic Coding Assistant",
-    description: "Local-first agentic coding assistant. 14 tools, self-learning memory, zero telemetry. Terminal or desktop — your choice.",
+    card: "summary_large_image",
+    title: "Clank — Agentic Assistant",
+    description: "Local-first agentic assistant powered by local models and cloud providers. 14 tools, self-learning memory, zero telemetry. Terminal or desktop — your choice.",
+    images: ["/og-banner.png"],
   },
 };
 

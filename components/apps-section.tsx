@@ -19,8 +19,8 @@ export function AppsSection() {
         {/* Unified intro */}
         <h2 className="text-2xl font-bold mb-2">Meet Clank</h2>
         <p className="text-[var(--text-muted)] text-sm mb-8 max-w-2xl">
-          Clank is an agentic coding assistant that runs entirely on your machine.
-          It uses a ReAct loop with 14 built-in tools to read, write, and execute code —
+          Clank is an agentic assistant powered by local models and cloud providers.
+          It uses a ReAct loop with 14 built-in tools to read, write, and execute —
           learning your preferences and project context along the way.
         </p>
 

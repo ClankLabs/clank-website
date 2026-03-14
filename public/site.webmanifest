@@ -1,7 +1,7 @@
 {
   "name": "Clank",
   "short_name": "Clank",
-  "description": "Local-first agentic coding assistant. 14 tools, self-learning memory, zero telemetry.",
+  "description": "Local-first agentic assistant powered by local models and cloud providers. 14 tools, self-learning memory, zero telemetry.",
   "start_url": "/",
   "display": "browser",
   "background_color": "#1e1e2e",

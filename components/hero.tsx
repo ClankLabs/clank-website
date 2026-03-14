@@ -25,9 +25,9 @@ export function Hero() {
         </h1>
 
         <p className="mt-4 text-lg text-[var(--text-muted)] max-w-xl mx-auto leading-relaxed">
-          An agentic coding assistant that reads, writes, and executes — with
-          self-learning memory, 14 tools, and zero telemetry. Run it from the
-          terminal or the desktop.
+          An agentic assistant powered by local models and cloud providers. Reads,
+          writes, and executes with self-learning memory, 14 tools, and zero
+          telemetry. Terminal or desktop — your choice.
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">

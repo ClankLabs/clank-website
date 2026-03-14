@@ -17,7 +17,7 @@ export function Footer() {
               <span className="text-sm font-medium text-[var(--text)]">Clank</span>
             </div>
             <p className="text-xs text-[var(--text-dim)] max-w-xs leading-relaxed">
-              Agentic coding assistant. Local-first, zero telemetry.
+              Agentic assistant. Local models &amp; cloud providers. Zero telemetry.
             </p>
           </div>
 
