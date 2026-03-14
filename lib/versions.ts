@@ -1,7 +1,7 @@
 export const VERSIONS = {
   cli: "2.5.21",
   desktop: "2.4.18",
-  autopilot: "0.2.0",
+  autopilot: "0.2.1",
 } as const;
 
 export type AppKey = keyof typeof VERSIONS;
