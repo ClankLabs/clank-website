@@ -1,7 +1,7 @@
 export const VERSIONS = {
   cli: "2.5.21",
   desktop: "2.4.18",
-  autopilot: "0.1.0",
+  autopilot: "0.2.0",
 } as const;
 
 export type AppKey = keyof typeof VERSIONS;
@@ -47,6 +47,10 @@ export function getDownloadUrl(app: AppKey, type: "installer" | "standalone" = "
     return type === "installer"
       ? `${base}/Clank.Desktop_${version}_x64-setup.exe`
       : `${base}/Clank.Desktop_${version}_x64-setup.exe`;
+  }
+
+  if (app === "autopilot") {
+    return `${base}/Home_Lab_Autopilot_${version}_setup.exe`;
   }
 
   if (platform === "mac") {
