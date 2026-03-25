@@ -67,7 +67,7 @@ export function Footer() {
             <ul className="space-y-1.5">
               <li>
                 <a
-                  href="https://x.com/ClankSuite"
+                  href="https://x.com/ClankLabs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 text-xs text-[var(--text-dim)] hover:text-[var(--text)] transition-colors"
@@ -78,7 +78,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://reddit.com/u/ClankSuite"
+                  href="https://reddit.com/u/ClankLabs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 text-xs text-[var(--text-dim)] hover:text-[var(--text)] transition-colors"

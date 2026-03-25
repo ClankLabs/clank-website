@@ -61,7 +61,7 @@ export function Navbar() {
             <Github className="w-4 h-4" />
           </a>
           <a
-            href="https://x.com/ClankSuite"
+            href="https://x.com/ClankLabs"
             target="_blank"
             rel="noopener noreferrer"
             className="p-1.5 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
@@ -69,7 +69,7 @@ export function Navbar() {
             <XIcon className="w-4 h-4" />
           </a>
           <a
-            href="https://reddit.com/u/ClankSuite"
+            href="https://reddit.com/u/ClankLabs"
             target="_blank"
             rel="noopener noreferrer"
             className="p-1.5 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
@@ -108,7 +108,7 @@ export function Navbar() {
             GitHub
           </a>
           <a
-            href="https://x.com/ClankSuite"
+            href="https://x.com/ClankLabs"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
@@ -118,7 +118,7 @@ export function Navbar() {
             X (Twitter)
           </a>
           <a
-            href="https://reddit.com/u/ClankSuite"
+            href="https://reddit.com/u/ClankLabs"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}

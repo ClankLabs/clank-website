@@ -87,4 +87,4 @@ Compare the hash with the one in `SHA256SUMS.txt`.
 
 ---
 
-For more info, visit [clanksuite.dev](https://clanksuite.dev).
+For more info, visit [clanklabs.dev](https://clanklabs.dev).

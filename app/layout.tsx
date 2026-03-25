@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://clanksuite.dev"),
+  metadataBase: new URL("https://clanklabs.dev"),
   title: "Clank — Agentic Assistant",
   description: "Local-first agentic assistant powered by local models and cloud providers. 14 tools, self-learning memory, zero telemetry. Terminal or desktop — your choice.",
   keywords: ["AI assistant", "local AI", "agentic assistant", "Ollama", "Claude", "OpenAI", "terminal", "zero telemetry", "private AI"],
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Clank — Agentic Assistant",
     description: "Local-first agentic assistant powered by local models and cloud providers. 14 tools, self-learning memory, zero telemetry. Terminal or desktop — your choice.",
     type: "website",
-    images: [{ url: "/og-banner.png", width: 1500, height: 500, alt: "Clank Suite — Your Code. Your Rules." }],
+    images: [{ url: "/og-banner.png", width: 1500, height: 500, alt: "Clank Labs — Your Code. Your Rules." }],
   },
   twitter: {
     card: "summary_large_image",

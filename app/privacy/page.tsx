@@ -73,7 +73,7 @@ export default function PrivacyPolicy() {
               This Website
             </h2>
             <p>
-              This website (clanksuite.dev) is a static site hosted on
+              This website (clanklabs.dev) is a static site hosted on
               GitHub Pages. We do not use cookies, analytics scripts, or tracking
               pixels. GitHub may collect standard server logs (IP address,
               browser user agent, page requested) as part of hosting

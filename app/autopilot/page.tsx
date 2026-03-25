@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Home Lab Autopilot — Clank Suite",
+  title: "Home Lab Autopilot — Clank Labs",
   description:
     "AI-powered natural language interface for managing your homelab infrastructure. Control Proxmox, TrueNAS, Docker, and Home Assistant with plain English.",
 };
