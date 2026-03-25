@@ -61,20 +61,12 @@ export function Navbar() {
             <Github className="w-4 h-4" />
           </a>
           <a
-            href="https://x.com/ClankLabs"
+            href="https://x.com/Clank_Labs"
             target="_blank"
             rel="noopener noreferrer"
             className="p-1.5 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
           >
             <XIcon className="w-4 h-4" />
-          </a>
-          <a
-            href="https://reddit.com/u/ClankLabs"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-1.5 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
-          >
-            <RedditIcon className="w-4 h-4" />
           </a>
         </div>
 
@@ -108,7 +100,7 @@ export function Navbar() {
             GitHub
           </a>
           <a
-            href="https://x.com/ClankLabs"
+            href="https://x.com/Clank_Labs"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
@@ -116,16 +108,6 @@ export function Navbar() {
           >
             <XIcon className="w-4 h-4" />
             X (Twitter)
-          </a>
-          <a
-            href="https://reddit.com/u/ClankLabs"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
-            className="flex items-center gap-2 py-2 text-sm text-[var(--text-muted)] hover:text-[var(--text)]"
-          >
-            <RedditIcon className="w-4 h-4" />
-            Reddit
           </a>
         </div>
       )}

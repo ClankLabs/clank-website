@@ -67,24 +67,13 @@ export function Footer() {
             <ul className="space-y-1.5">
               <li>
                 <a
-                  href="https://x.com/ClankLabs"
+                  href="https://x.com/Clank_Labs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 text-xs text-[var(--text-dim)] hover:text-[var(--text)] transition-colors"
                 >
                   <XIcon className="w-3 h-3" />
                   X (Twitter)
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://reddit.com/u/ClankLabs"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-xs text-[var(--text-dim)] hover:text-[var(--text)] transition-colors"
-                >
-                  <RedditIcon className="w-3 h-3" />
-                  Reddit
                 </a>
               </li>
             </ul>
