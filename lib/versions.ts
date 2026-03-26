@@ -1,5 +1,5 @@
 export const VERSIONS = {
-  clank: "1.7.3",
+  clank: "1.7.4",
   autopilot: "0.3.0",
 } as const;
 
