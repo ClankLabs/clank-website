@@ -1,6 +1,5 @@
 export const VERSIONS = {
   clank: "1.7.4",
-  autopilot: "0.3.0",
 } as const;
 
 export type AppKey = keyof typeof VERSIONS;
@@ -14,14 +13,6 @@ export const APP_DATA = {
     github: "ItsTrag1c/Clank",
     features: ["Multi-Agent", "Multi-Channel", "Local-First", "Gateway", "Plugins"],
   },
-  autopilot: {
-    name: "Home Lab Autopilot",
-    tagline: "Natural language interface for your homelab",
-    description: "AI-powered homelab management. Control Proxmox, TrueNAS, Docker, and Home Assistant with plain English. No more memorizing CLI commands — just ask.",
-    color: "build",
-    github: "ItsTrag1c/homelab-autopilot",
-    features: ["Proxmox VE", "TrueNAS", "Docker", "Home Assistant", "Natural Language"],
-  },
 } as const;
 
 export function getDownloadUrl(app: AppKey, type: "installer" | "standalone" = "installer", platform: "windows" | "mac" = "windows"): string {
@@ -31,11 +22,6 @@ export function getDownloadUrl(app: AppKey, type: "installer" | "standalone" = "
   // Clank Gateway — npm install for now, binary releases later
   if (app === "clank") {
     return `https://github.com/${repo}`;
-  }
-
-  if (app === "autopilot") {
-    const autopilotBase = `https://github.com/${repo}/releases/download/v${version}`;
-    return `${autopilotBase}/Home_Lab_Autopilot_${version}_setup.exe`;
   }
 
   return `https://github.com/${repo}`;

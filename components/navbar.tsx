@@ -25,7 +25,6 @@ const links = [
   { label: "Features", href: "/#features" },
   { label: "Wrench", href: "/wrench" },
   { label: "Docs", href: "/docs" },
-  { label: "Autopilot", href: "/autopilot" },
   { label: "Download", href: "/#download" },
 ];
 

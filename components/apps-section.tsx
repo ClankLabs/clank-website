@@ -1,7 +1,7 @@
 "use client";
 
-import { Globe, Terminal, Send, MessageSquare, Layout, ExternalLink, Server, Bot, Brain, ShieldCheck, Sparkles, Plug } from "lucide-react";
-import { APP_DATA, VERSIONS } from "@/lib/versions";
+import { Globe, Terminal, Send, MessageSquare, Layout, ExternalLink, Bot, Brain, ShieldCheck, Sparkles, Plug } from "lucide-react";
+import { VERSIONS } from "@/lib/versions";
 
 export function AppsSection() {
   const highlights = [
@@ -42,10 +42,10 @@ export function AppsSection() {
         {/* The Lab */}
         <h3 className="text-lg font-semibold mb-2">The Lab</h3>
         <p className="text-[var(--text-muted)] text-sm mb-6">
-          AI tools and models for developers and homelabbers. Local-first, open source, Apache 2.0.
+          AI tools and models for developers. Local-first, open source, Apache 2.0.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
           {/* Clank Gateway */}
           <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6">
             <div className="flex items-center gap-3 mb-3">
@@ -132,46 +132,6 @@ export function AppsSection() {
             </div>
           </div>
 
-          {/* Home Lab Autopilot */}
-          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-lg bg-[rgba(88,166,255,0.1)] border border-[rgba(88,166,255,0.2)] flex items-center justify-center">
-                <Server className="w-5 h-5 text-[#58a6ff]" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-[var(--text)]">Home Lab Autopilot</h4>
-                <span className="text-xs font-mono text-[var(--text-dim)]">v{VERSIONS.autopilot}</span>
-              </div>
-            </div>
-            <p className="text-sm text-[var(--text-muted)] leading-relaxed mb-3">
-              Manage your homelab with natural language. Proxmox, TrueNAS, Docker, and
-              Home Assistant — just ask. No more memorizing CLI commands.
-            </p>
-            <div className="flex flex-wrap gap-1.5 mb-5">
-              {["Proxmox", "TrueNAS", "Docker", "Home Assistant", "Natural Language"].map((tag) => (
-                <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full bg-[rgba(88,166,255,0.1)] border border-[rgba(88,166,255,0.15)] text-[#58a6ff]">
-                  {tag}
-                </span>
-              ))}
-            </div>
-            <div className="flex gap-2">
-              <a
-                href="/autopilot"
-                className="inline-flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium rounded-lg bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-white transition-colors"
-              >
-                Learn More
-              </a>
-              <a
-                href={`https://github.com/${APP_DATA.autopilot.github}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2.5 text-sm rounded-lg border border-[var(--border)] hover:border-[var(--border-hover)] hover:bg-[var(--surface-2)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
-              >
-                <ExternalLink className="w-4 h-4" />
-                GitHub
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
