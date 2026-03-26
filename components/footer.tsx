@@ -75,6 +75,17 @@ export function Footer() {
                   X (Twitter)
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://reddit.com/u/ClankLabs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-xs text-[var(--text-dim)] hover:text-[var(--text)] transition-colors"
+                >
+                  <RedditIcon className="w-3 h-3" />
+                  Reddit
+                </a>
+              </li>
             </ul>
           </div>
         </div>
