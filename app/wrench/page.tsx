@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Wrench — Clank Labs",
   description:
-    "Purpose-built agentic AI models. Wrench 35B scores 113/120 (Sonnet-tier) on 16GB VRAM. Wrench 8B scores 92/120 on 8GB VRAM. Fine-tuned for tool calling, error recovery, and system prompt following.",
+    "Purpose-built agentic AI models. Wrench 35B scores 113/120 (Sonnet-tier) on 16GB VRAM. Wrench 8B scores 105/120 on 8GB VRAM. Fine-tuned for tool calling, error recovery, and system prompt following.",
 };
 
 const benchmarks35B = [
@@ -30,21 +30,21 @@ const benchmarks35B = [
 ];
 
 const benchmarks8B = [
-  { category: "Basic Tool Use", score: 13, max: 15 },
+  { category: "Basic Tool Use", score: 11, max: 15 },
   { category: "Multi-Step Tasks", score: 13, max: 15 },
-  { category: "Error Recovery", score: 11, max: 15 },
-  { category: "Response Quality", score: 10, max: 15 },
-  { category: "System Prompt Following", score: 9, max: 15 },
-  { category: "Planning & Reasoning", score: 7, max: 15 },
-  { category: "Tool Format Correctness", score: 14, max: 15 },
-  { category: "Safety & Restraint", score: 15, max: 15 },
+  { category: "Error Recovery", score: 14, max: 15 },
+  { category: "Response Quality", score: 14, max: 15 },
+  { category: "System Prompt Following", score: 12, max: 15 },
+  { category: "Planning & Reasoning", score: 12, max: 15 },
+  { category: "Tool Format Correctness", score: 15, max: 15 },
+  { category: "Safety & Restraint", score: 14, max: 15 },
 ];
 
 const comparisons = [
   { model: "Claude Sonnet", score: "~114/120", tier: "Frontier" },
   { model: "Wrench 35B", score: "113/120", tier: "Clank Labs" },
   { model: "GPT-4o", score: "~110/120", tier: "Frontier" },
-  { model: "Wrench 8B", score: "92/120", tier: "Clank Labs" },
+  { model: "Wrench 8B", score: "105/120", tier: "Clank Labs" },
   { model: "Base Qwen 3.5 35B", score: "~60/120", tier: "Base" },
 ];
 
@@ -67,7 +67,7 @@ const features = [
   {
     icon: BarChart3,
     title: "Proven Performance",
-    desc: "35B scores 113/120 (Sonnet-tier). 8B scores 92/120 with perfect safety. On hardware you own, for free.",
+    desc: "35B scores 113/120 (Sonnet-tier). 8B scores 105/120 (87.5%). On hardware you own, for free.",
   },
   {
     icon: Terminal,
@@ -101,7 +101,7 @@ export default function WrenchPage() {
               <span className="text-[var(--accent)] font-semibold">35B</span> scores
               113/120 (Sonnet-tier) on 16GB VRAM. The{" "}
               <span className="text-[var(--accent)] font-semibold">8B</span> scores
-              92/120 on 8GB VRAM.
+              105/120 on 8GB VRAM.
             </p>
             <div className="flex items-center justify-center gap-4 flex-wrap">
               <a
@@ -206,7 +206,7 @@ export default function WrenchPage() {
                 ))}
                 <div className="pt-2 border-t border-[var(--border)] flex justify-between text-sm font-semibold">
                   <span className="text-[var(--text)]">Total</span>
-                  <span className="text-[var(--accent)]">92/120 (76.7%)</span>
+                  <span className="text-[var(--accent)]">105/120 (87.5%)</span>
                 </div>
               </div>
             </div>
@@ -394,7 +394,7 @@ export default function WrenchPage() {
                         ["Quantization", "Q4_K_M GGUF (~5GB)"],
                         ["Context Window", "8,192 tokens"],
                         ["Min GPU", "8GB VRAM"],
-                        ["Benchmark", "92/120 (76.7%)"],
+                        ["Benchmark", "105/120 (87.5%)"],
                         ["License", "Apache 2.0"],
                       ].map(([label, value]) => (
                         <tr key={label} className="border-t border-[var(--border)] first:border-t-0">

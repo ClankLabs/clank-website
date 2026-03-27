@@ -103,7 +103,7 @@ export function AppsSection() {
             </div>
             <p className="text-sm text-[var(--text-muted)] leading-relaxed mb-3">
               Purpose-built agentic models. 35B scores 113/120 (Sonnet-tier, 16GB VRAM).
-              8B scores 92/120 (8GB VRAM). Fine-tuned for tool calling, error recovery,
+              8B scores 105/120 (8GB VRAM). Fine-tuned for tool calling, error recovery,
               and system prompt following.
             </p>
             <div className="flex flex-wrap gap-1.5 mb-5">
