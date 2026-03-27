@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Wrench — Clank Labs",
   description:
-    "Purpose-built agentic AI models. Wrench 35B scores 113/120 (Sonnet-tier) on 16GB VRAM. Wrench 8B scores 105/120 on 8GB VRAM. Fine-tuned for tool calling, error recovery, and system prompt following.",
+    "Purpose-built agentic AI models. Wrench 35B scores 113/120 (Sonnet-tier) on 16GB VRAM. Wrench 9B scores 105/120 on 8GB VRAM. Fine-tuned for tool calling, error recovery, and system prompt following.",
 };
 
 const benchmarks35B = [
@@ -29,7 +29,7 @@ const benchmarks35B = [
   { category: "Safety & Restraint", score: 15, max: 15 },
 ];
 
-const benchmarks8B = [
+const benchmarks9B = [
   { category: "Basic Tool Use", score: 11, max: 15 },
   { category: "Multi-Step Tasks", score: 13, max: 15 },
   { category: "Error Recovery", score: 14, max: 15 },
@@ -44,7 +44,7 @@ const comparisons = [
   { model: "Claude Sonnet", score: "~114/120", tier: "Frontier" },
   { model: "Wrench 35B", score: "113/120", tier: "Clank Labs" },
   { model: "GPT-4o", score: "~110/120", tier: "Frontier" },
-  { model: "Wrench 8B", score: "105/120", tier: "Clank Labs" },
+  { model: "Wrench 9B", score: "105/120", tier: "Clank Labs" },
   { model: "Base Qwen 3.5 35B", score: "~60/120", tier: "Base" },
 ];
 
@@ -57,7 +57,7 @@ const features = [
   {
     icon: Cpu,
     title: "Two Sizes",
-    desc: "35B MoE (3B active, 16GB VRAM) for maximum capability. 8B dense (~5GB GGUF, 8GB VRAM) for lighter hardware.",
+    desc: "35B MoE (3B active, 16GB VRAM) for maximum capability. 9B dense (~5GB GGUF, 8GB VRAM) for lighter hardware.",
   },
   {
     icon: Shield,
@@ -67,7 +67,7 @@ const features = [
   {
     icon: BarChart3,
     title: "Proven Performance",
-    desc: "35B scores 113/120 (Sonnet-tier). 8B scores 105/120 (87.5%). On hardware you own, for free.",
+    desc: "35B scores 113/120 (Sonnet-tier). 9B scores 105/120 (87.5%). On hardware you own, for free.",
   },
   {
     icon: Terminal,
@@ -100,7 +100,7 @@ export default function WrenchPage() {
               error recovery, and system prompt following. The{" "}
               <span className="text-[var(--accent)] font-semibold">35B</span> scores
               113/120 (Sonnet-tier) on 16GB VRAM. The{" "}
-              <span className="text-[var(--accent)] font-semibold">8B</span> scores
+              <span className="text-[var(--accent)] font-semibold">9B</span> scores
               105/120 on 8GB VRAM.
             </p>
             <div className="flex items-center justify-center gap-4 flex-wrap">
@@ -120,7 +120,7 @@ export default function WrenchPage() {
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[var(--accent)] text-black font-medium hover:opacity-90 transition-opacity"
               >
                 <Download className="w-4 h-4" />
-                8B on HuggingFace
+                9B on HuggingFace
               </a>
               <a
                 href="https://github.com/ClankLabs/Clank"
@@ -183,12 +183,12 @@ export default function WrenchPage() {
                 </div>
               </div>
 
-              {/* 8B scores */}
+              {/* 9B scores */}
               <div className="space-y-4">
                 <h3 className="text-sm font-medium text-[var(--text-muted)] mb-3">
-                  Wrench 8B — Category Breakdown
+                  Wrench 9B — Category Breakdown
                 </h3>
-                {benchmarks8B.map((b) => (
+                {benchmarks9B.map((b) => (
                   <div key={b.category}>
                     <div className="flex justify-between text-sm mb-1">
                       <span className="text-[var(--text)]">{b.category}</span>
@@ -312,14 +312,14 @@ export default function WrenchPage() {
                   <p>ollama create wrench -f Modelfile</p>
                   <p>ollama run wrench</p>
                   <p></p>
-                  <p className="text-[var(--text-dim)]"># For the 8B model:</p>
-                  <p>ollama create wrench-8b -f Modelfile</p>
-                  <p>ollama run wrench-8b</p>
+                  <p className="text-[var(--text-dim)]"># For the 9B model:</p>
+                  <p>ollama create wrench-9b -f Modelfile</p>
+                  <p>ollama run wrench-9b</p>
                   <p></p>
                   <p className="text-[var(--text-dim)]"># Or use with Clank:</p>
                   <p>npm install -g @clanklabs/clank</p>
                   <p>clank setup</p>
-                  <p className="text-[var(--text-dim)]"># Set primary model to &quot;ollama/wrench&quot; or &quot;ollama/wrench-8b&quot; in config</p>
+                  <p className="text-[var(--text-dim)]"># Set primary model to &quot;ollama/wrench&quot; or &quot;ollama/wrench-9b&quot; in config</p>
                 </div>
               </div>
 
@@ -333,7 +333,7 @@ export default function WrenchPage() {
                   <p className="text-[var(--text-dim)]"># 35B model:</p>
                   <p>./llama-server -m wrench-35B-A3B-Q4_K_M.gguf --jinja -ngl 100 -fa on --temp 0.4 --top-k 20 --top-p 0.95 --min-p 0 --presence-penalty 1.5 -c 32768</p>
                   <p></p>
-                  <p className="text-[var(--text-dim)]"># 8B model:</p>
+                  <p className="text-[var(--text-dim)]"># 9B model:</p>
                   <p>./llama-server -m wrench-9B-Q4_K_M.gguf --jinja -ngl 100 -fa on --temp 0.4 --top-k 20 --top-p 0.95 --min-p 0 --presence-penalty 1.5 -c 8192</p>
                   <p></p>
                   <p className="text-[var(--text-dim)]"># Serves an OpenAI-compatible API on port 8080</p>
@@ -380,15 +380,15 @@ export default function WrenchPage() {
                 </div>
               </div>
 
-              {/* 8B card */}
+              {/* 9B card */}
               <div>
-                <h3 className="text-sm font-medium text-[var(--accent)] mb-3">Wrench 8B</h3>
+                <h3 className="text-sm font-medium text-[var(--accent)] mb-3">Wrench 9B</h3>
                 <div className="border border-[var(--border)] rounded-lg overflow-hidden">
                   <table className="w-full text-sm">
                     <tbody>
                       {[
                         ["Base Model", "Qwen3.5-9B"],
-                        ["Architecture", "Dense — 8B parameters"],
+                        ["Architecture", "Dense — 9B parameters"],
                         ["Fine-Tune", "LoRA (rank 64, alpha 128)"],
                         ["Training Data", "1,147 examples, 15 categories"],
                         ["Quantization", "Q4_K_M GGUF (~5GB)"],
