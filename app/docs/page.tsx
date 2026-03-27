@@ -19,31 +19,31 @@ export default function DocsPage() {
           <DocCard
             title="Install Guide"
             description="Install Clank, set up local models, configure cloud providers, connect Telegram and Discord."
-            href="https://github.com/ItsTrag1c/Clank/blob/main/docs/INSTALL.md"
+            href="https://github.com/ClankLabs/Clank/blob/main/docs/INSTALL.md"
             icon="📦"
           />
           <DocCard
             title="User Guide"
             description="Day-to-day usage — agents, sub-agents, background tasks, Telegram commands, configuration reference."
-            href="https://github.com/ItsTrag1c/Clank/blob/main/docs/USER_GUIDE.md"
+            href="https://github.com/ClankLabs/Clank/blob/main/docs/USER_GUIDE.md"
             icon="📖"
           />
           <DocCard
             title="Changelog"
             description="Complete release history with every feature, fix, and improvement."
-            href="https://github.com/ItsTrag1c/Clank/blob/main/CHANGELOG.md"
+            href="https://github.com/ClankLabs/Clank/blob/main/CHANGELOG.md"
             icon="📋"
           />
           <DocCard
             title="Security Policy"
             description="Security model, reporting vulnerabilities, and what to expect from Clank's access model."
-            href="https://github.com/ItsTrag1c/Clank/blob/main/SECURITY.md"
+            href="https://github.com/ClankLabs/Clank/blob/main/SECURITY.md"
             icon="🔒"
           />
         </div>
 
         <Section title="Quick Start">
-          <CodeBlock>{`npm install -g @tractorscorch/clank
+          <CodeBlock>{`npm install -g @clanklabs/clank
 clank setup
 clank`}</CodeBlock>
           <p className="text-[var(--text-muted)] mt-3 text-sm">

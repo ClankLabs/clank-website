@@ -71,7 +71,7 @@ export function AppsSection() {
             </div>
             <div className="flex gap-2">
               <a
-                href="https://github.com/ItsTrag1c/Clank"
+                href="https://github.com/ClankLabs/Clank"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium rounded-lg bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-white transition-colors"
@@ -79,7 +79,7 @@ export function AppsSection() {
                 Get Started
               </a>
               <a
-                href="https://github.com/ItsTrag1c/Clank"
+                href="https://github.com/ClankLabs/Clank"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-4 py-2.5 text-sm rounded-lg border border-[var(--border)] hover:border-[var(--border-hover)] hover:bg-[var(--surface-2)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"

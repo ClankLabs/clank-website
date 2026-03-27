@@ -12,19 +12,19 @@ An agentic assistant with 14 tools, project memory, and plan/build modes. Works 
 
 **One-liner install**
 ```powershell
-irm https://raw.githubusercontent.com/ItsTrag1c/Clank/cli/install.ps1 | iex
+irm https://raw.githubusercontent.com/ClankLabs/Clank/cli/install.ps1 | iex
 ```
 Downloads the latest release to `%USERPROFILE%\Clank\` and adds it to your PATH. Run with `clank`.
 
 **Installer**
-Download `Clank_setup.exe` from [GitHub Releases](https://github.com/ItsTrag1c/Clank/releases/latest). Installs to `C:\Program Files\Clank\` and adds `clank` to your system PATH.
+Download `Clank_setup.exe` from [GitHub Releases](https://github.com/ClankLabs/Clank/releases/latest). Installs to `C:\Program Files\Clank\` and adds `clank` to your system PATH.
 
 **Standalone EXE**
-Download `Clank.exe` from [GitHub Releases](https://github.com/ItsTrag1c/Clank/releases/latest). Run from anywhere — no install needed.
+Download `Clank.exe` from [GitHub Releases](https://github.com/ClankLabs/Clank/releases/latest). Run from anywhere — no install needed.
 
 ### macOS
 
-Download the `Clank` binary from [GitHub Releases](https://github.com/ItsTrag1c/Clank/releases/latest), make it executable, and move it to your PATH:
+Download the `Clank` binary from [GitHub Releases](https://github.com/ClankLabs/Clank/releases/latest), make it executable, and move it to your PATH:
 
 ```bash
 chmod +x Clank
@@ -48,14 +48,14 @@ The Clank agent wrapped in a desktop GUI.
 ### Windows
 
 **Installer (recommended)**
-Download `Clank Desktop_x64-setup.exe` from [GitHub Releases](https://github.com/ItsTrag1c/Clank/releases/latest). Installs to `C:\Program Files\Clank Desktop\`.
+Download `Clank Desktop_x64-setup.exe` from [GitHub Releases](https://github.com/ClankLabs/Clank/releases/latest). Installs to `C:\Program Files\Clank Desktop\`.
 
 **MSI**
-Download `Clank Desktop_x64_en-US.msi` from [GitHub Releases](https://github.com/ItsTrag1c/Clank/releases/latest) for MSI-based deployment.
+Download `Clank Desktop_x64_en-US.msi` from [GitHub Releases](https://github.com/ClankLabs/Clank/releases/latest) for MSI-based deployment.
 
 ### macOS
 
-Download `Clank Desktop_aarch64.dmg` from [GitHub Releases](https://github.com/ItsTrag1c/Clank/releases/latest) and drag to Applications.
+Download `Clank Desktop_aarch64.dmg` from [GitHub Releases](https://github.com/ClankLabs/Clank/releases/latest) and drag to Applications.
 
 ---
 

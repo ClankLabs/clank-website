@@ -19,7 +19,7 @@ function RedditIcon({ className }: { className?: string }) {
 }
 
 const repos = [
-  { name: "Clank", href: "https://github.com/ItsTrag1c/Clank" },
+  { name: "Clank", href: "https://github.com/ClankLabs/Clank" },
 ];
 
 export function Footer() {
@@ -91,7 +91,7 @@ export function Footer() {
 
         <div className="pt-6 border-t border-[var(--border)] flex items-center justify-between">
           <p className="text-xs text-[var(--text-dim)]">
-            &copy; 2025&ndash;2026 ItsTrag1c
+            &copy; 2025&ndash;2026 Clank Labs
           </p>
           <div className="flex items-center gap-4">
             <Link

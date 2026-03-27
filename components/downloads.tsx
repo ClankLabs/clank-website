@@ -22,7 +22,7 @@ export function Downloads() {
             </div>
           </div>
           <div className="bg-[var(--bg)] rounded-lg p-4 font-mono text-sm text-[var(--text-muted)] border border-[var(--border)]">
-            <div className="mb-1"><span className="text-[var(--text-dim)]">$</span> npm install -g @tractorscorch/clank</div>
+            <div className="mb-1"><span className="text-[var(--text-dim)]">$</span> npm install -g @clanklabs/clank</div>
             <div className="mb-1"><span className="text-[var(--text-dim)]">$</span> clank setup</div>
             <div><span className="text-[var(--text-dim)]">$</span> clank</div>
           </div>
@@ -35,7 +35,7 @@ export function Downloads() {
         {/* Links */}
         <div className="grid sm:grid-cols-3 gap-3">
           <a
-            href="https://github.com/ItsTrag1c/Clank"
+            href="https://github.com/ClankLabs/Clank"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 p-4 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] transition-colors"
@@ -47,7 +47,7 @@ export function Downloads() {
             </div>
           </a>
           <a
-            href="https://github.com/ItsTrag1c/Clank/blob/main/CHANGELOG.md"
+            href="https://github.com/ClankLabs/Clank/blob/main/CHANGELOG.md"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 p-4 rounded-lg border border-[var(--border)] bg-[var(--surface)] hover:border-[var(--border-hover)] transition-colors"

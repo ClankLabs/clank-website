@@ -1,5 +1,5 @@
 export const VERSIONS = {
-  clank: "1.7.4",
+  clank: "1.7.5",
 } as const;
 
 export type AppKey = keyof typeof VERSIONS;
@@ -10,7 +10,7 @@ export const APP_DATA = {
     tagline: "Local-first AI agent gateway",
     description: "A personal AI gateway — one daemon, many frontends. Multi-agent, multi-channel (CLI, Web, Telegram, Discord), optimized for local models. Open-source alternative to OpenClaw.",
     color: "build",
-    github: "ItsTrag1c/Clank",
+    github: "ClankLabs/Clank",
     features: ["Multi-Agent", "Multi-Channel", "Local-First", "Gateway", "Plugins"],
   },
 } as const;

@@ -53,7 +53,7 @@ export function Navbar() {
           ))}
           <div className="w-px h-4 bg-[var(--border)] mx-2" />
           <a
-            href="https://github.com/ItsTrag1c"
+            href="https://github.com/ClankLabs"
             target="_blank"
             rel="noopener noreferrer"
             className="p-1.5 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
@@ -99,7 +99,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="https://github.com/ItsTrag1c"
+            href="https://github.com/ClankLabs"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 py-2 text-sm text-[var(--text-muted)] hover:text-[var(--text)]"

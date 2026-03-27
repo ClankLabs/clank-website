@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Clank — Agentic Assistant",
   description: "Local-first agentic assistant powered by local models and cloud providers. 14 tools, self-learning memory, zero telemetry. Terminal or desktop — your choice.",
   keywords: ["AI assistant", "local AI", "agentic assistant", "Ollama", "Claude", "OpenAI", "terminal", "zero telemetry", "private AI"],
-  authors: [{ name: "ItsTrag1c" }],
+  authors: [{ name: "ClankLabs" }],
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },

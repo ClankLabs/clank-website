@@ -123,7 +123,7 @@ export default function WrenchPage() {
                 8B on HuggingFace
               </a>
               <a
-                href="https://github.com/ItsTrag1c/Clank"
+                href="https://github.com/ClankLabs/Clank"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-[var(--border)] text-[var(--text)] hover:border-[var(--border-hover)] transition-colors"
@@ -132,7 +132,7 @@ export default function WrenchPage() {
                 Use with Clank
               </a>
               <a
-                href="https://github.com/ItsTrag1c/wrench-training-data"
+                href="https://github.com/ClankLabs/wrench-training-data"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-[var(--border)] text-[var(--text)] hover:border-[var(--border-hover)] transition-colors"
@@ -317,7 +317,7 @@ export default function WrenchPage() {
                   <p>ollama run wrench-8b</p>
                   <p></p>
                   <p className="text-[var(--text-dim)]"># Or use with Clank:</p>
-                  <p>npm install -g @tractorscorch/clank</p>
+                  <p>npm install -g @clanklabs/clank</p>
                   <p>clank setup</p>
                   <p className="text-[var(--text-dim)]"># Set primary model to &quot;ollama/wrench&quot; or &quot;ollama/wrench-8b&quot; in config</p>
                 </div>
