@@ -59,11 +59,11 @@ export function AppsSection() {
             </div>
             <p className="text-sm text-[var(--text-muted)] leading-relaxed mb-3">
               AI agent gateway — one daemon powering CLI, TUI, Web UI, Telegram, and Discord.
-              Multi-agent, 18 tools, self-configuring through conversation. Optimized for
+              Multi-agent, 25 tools, self-configuring through conversation. Optimized for
               local models on consumer hardware.
             </p>
             <div className="flex flex-wrap gap-1.5 mb-5">
-              {["Gateway", "Multi-Agent", "Telegram", "Web UI", "18 Tools", "Plugins"].map((tag) => (
+              {["Gateway", "Multi-Agent", "Telegram", "Web UI", "25 Tools", "Plugins"].map((tag) => (
                 <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full bg-[rgba(249,115,22,0.1)] border border-[rgba(249,115,22,0.15)] text-[var(--accent)]">
                   {tag}
                 </span>
@@ -102,8 +102,8 @@ export function AppsSection() {
               </div>
             </div>
             <p className="text-sm text-[var(--text-muted)] leading-relaxed mb-3">
-              Purpose-built agentic models. 35B scores 113/120 (Sonnet-tier, 16GB VRAM).
-              9B scores 105/120 (8GB VRAM). Fine-tuned for tool calling, error recovery,
+              Purpose-built agentic models. 35B scores 118/120 (matches Claude Opus, 16GB VRAM).
+              9B scores 114/120 (matches Claude Sonnet, 8GB VRAM). Fine-tuned for tool calling, error recovery,
               and system prompt following.
             </p>
             <div className="flex flex-wrap gap-1.5 mb-5">
