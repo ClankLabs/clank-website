@@ -1,5 +1,5 @@
 export const VERSIONS = {
-  clank: "1.11.1",
+  clank: "1.11.2",
 } as const;
 
 export type AppKey = keyof typeof VERSIONS;
