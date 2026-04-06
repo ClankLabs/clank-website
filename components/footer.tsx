@@ -100,9 +100,14 @@ export function Footer() {
             >
               Privacy Policy
             </Link>
-            <p className="text-xs text-[var(--text-dim)]">
-              MIT License
-            </p>
+            <a
+              href="https://www.apache.org/licenses/LICENSE-2.0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-[var(--text-dim)] hover:text-[var(--text)] transition-colors"
+            >
+              Apache 2.0
+            </a>
           </div>
         </div>
       </div>

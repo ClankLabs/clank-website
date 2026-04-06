@@ -101,6 +101,7 @@ clank`}</CodeBlock>
                 <CmdRow cmd="/killall" desc="Kill all tasks" />
                 <CmdRow cmd="/think" desc="Toggle thinking display" />
                 <CmdRow cmd="/model" desc="Show model + fallbacks" />
+                <CmdRow cmd="/models" desc="List and switch models" />
                 <CmdRow cmd="/version" desc="Show version" />
               </tbody>
             </table>
@@ -123,11 +124,14 @@ clank`}</CodeBlock>
                 <CmdRow cmd="clank setup" desc="Run setup wizard" />
                 <CmdRow cmd="clank gateway start|stop|restart" desc="Manage harness" />
                 <CmdRow cmd="clank auth login|status|logout" desc="OAuth credentials" />
-                <CmdRow cmd="clank models list" desc="List models" />
-                <CmdRow cmd="clank agents list" desc="List agents" />
-                <CmdRow cmd="clank daemon install|uninstall" desc="System service" />
+                <CmdRow cmd="clank models list|add|test" desc="Manage models" />
+                <CmdRow cmd="clank agents list|add" desc="Manage agents" />
+                <CmdRow cmd="clank cron list|add" desc="Scheduled jobs" />
+                <CmdRow cmd="clank channels" desc="Channel adapter status" />
+                <CmdRow cmd="clank daemon install|uninstall|status" desc="System service" />
                 <CmdRow cmd="clank fix" desc="Run diagnostics" />
                 <CmdRow cmd="clank update" desc="Update Clank" />
+                <CmdRow cmd="clank uninstall" desc="Remove everything" />
               </tbody>
             </table>
           </div>

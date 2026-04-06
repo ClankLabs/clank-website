@@ -25,7 +25,7 @@ const features = [
   {
     icon: Send,
     title: "Multi-Channel",
-    description: "CLI, TUI, Web UI, Telegram, Discord — all equal interfaces sharing sessions.",
+    description: "CLI, TUI, Web UI, Telegram, Discord, Signal — all equal interfaces sharing sessions.",
   },
   {
     icon: Layout,
@@ -49,8 +49,8 @@ const features = [
   },
   {
     icon: GitBranch,
-    title: "18 Tools",
-    description: "File I/O, bash, git, web search, plus 8 self-config tools for agents to manage themselves.",
+    title: "25 Tools",
+    description: "File ops, bash, git, web search, doc search (RAG), plus 10 self-config tools, 3 voice tools, and file sharing.",
   },
   {
     icon: Terminal,

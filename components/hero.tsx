@@ -56,9 +56,9 @@ export function Hero() {
           <span className="w-1 h-1 rounded-full bg-[var(--border)]" />
           <span>Zero telemetry</span>
           <span className="w-1 h-1 rounded-full bg-[var(--border)]" />
-          <span>18 tools</span>
+          <span>25 tools</span>
           <span className="w-1 h-1 rounded-full bg-[var(--border)]" />
-          <span>MIT licensed</span>
+          <span>Apache 2.0</span>
         </div>
       </div>
     </section>
