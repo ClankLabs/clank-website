@@ -1,6 +1,6 @@
 "use client";
 
-import { Terminal, ExternalLink, Bot, Brain, Sparkles, Plug, Code2 } from "lucide-react";
+import { Terminal, ExternalLink, Bot, Brain, Sparkles, Plug } from "lucide-react";
 import { VERSIONS } from "@/lib/versions";
 
 export function AppsSection() {
@@ -10,7 +10,6 @@ export function AppsSection() {
     { icon: Terminal, label: "Multi-Channel", desc: "CLI, TUI, Web UI, Telegram, Discord, Signal" },
     { icon: Brain, label: "Memory + Context", desc: "TF-IDF memory with decay and aggressive compaction for local models" },
     { icon: Plug, label: "Plugin System", desc: "Extend with custom tools, channels, and providers" },
-    { icon: Code2, label: "Coding Agent", desc: "Terminal-first coding workflow with project sessions and memory" },
   ];
 
   return (
@@ -36,7 +35,7 @@ export function AppsSection() {
           })}
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
           <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-10 h-10 rounded-lg bg-[rgba(249,115,22,0.1)] border border-[rgba(249,115,22,0.2)] flex items-center justify-center">
@@ -68,47 +67,6 @@ export function AppsSection() {
               </a>
               <a
                 href="https://github.com/ClankLabs/Clank"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2.5 text-sm rounded-lg border border-[var(--border)] hover:border-[var(--border-hover)] hover:bg-[var(--surface-2)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
-              >
-                <ExternalLink className="w-4 h-4" />
-                GitHub
-              </a>
-            </div>
-          </div>
-
-          <div className="rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-lg bg-[rgba(249,115,22,0.1)] border border-[rgba(249,115,22,0.2)] flex items-center justify-center">
-                <Code2 className="w-5 h-5 text-[var(--accent)]" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-[var(--text)]">Clank Code</h4>
-                <span className="text-xs font-mono text-[var(--text-dim)]">v{VERSIONS.clankCode}</span>
-              </div>
-            </div>
-            <p className="text-sm text-[var(--text-muted)] leading-relaxed mb-3">
-              Terminal coding agent with a focused coding workflow. Local-first routing, project memory, persistent sessions, slash commands, and Codex OAuth support.
-            </p>
-            <div className="flex flex-wrap gap-1.5 mb-5">
-              {["Terminal UI", "Coding Agent", "Project Memory", "Sessions", "Codex OAuth"].map((tag) => (
-                <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full bg-[rgba(249,115,22,0.1)] border border-[rgba(249,115,22,0.15)] text-[var(--accent)]">
-                  {tag}
-                </span>
-              ))}
-            </div>
-            <div className="flex gap-2">
-              <a
-                href="https://www.npmjs.com/package/@clanklabs/clank-code"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium rounded-lg bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-white transition-colors"
-              >
-                Install
-              </a>
-              <a
-                href="https://github.com/ClankLabs/clank-code"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-4 py-2.5 text-sm rounded-lg border border-[var(--border)] hover:border-[var(--border-hover)] hover:bg-[var(--surface-2)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"

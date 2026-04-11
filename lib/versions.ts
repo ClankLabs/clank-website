@@ -1,6 +1,5 @@
 export const VERSIONS = {
   clank: "1.12.1",
-  clankCode: "0.1.0",
 } as const;
 
 export type AppKey = keyof typeof VERSIONS;
@@ -13,14 +12,6 @@ export const APP_DATA = {
     color: "build",
     github: "ClankLabs/Clank",
     features: ["Multi-Agent", "Multi-Channel", "Local-First", "Harness", "Plugins"],
-  },
-  clankCode: {
-    name: "Clank Code",
-    tagline: "Terminal coding agent",
-    description: "Terminal coding agent with local-first routing, shared config, project memory, and Codex OAuth support.",
-    color: "build",
-    github: "ClankLabs/clank-code",
-    features: ["Coding Agent", "Terminal UI", "Project Memory", "Codex OAuth", "Local-First"],
   },
 } as const;
 

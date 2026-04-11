@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Clank Labs Documentation",
-  description: "Install guides, user guides, and reference docs for Clank and Clank Code.",
+  description: "Install guides, user guides, and reference docs for Clank.",
 };
 
 export default function DocsPage() {
@@ -44,44 +44,10 @@ export default function DocsPage() {
           </div>
         </Section>
 
-        <Section title="Clank Code">
-          <div className="grid gap-6 md:grid-cols-2 mb-12">
-            <DocCard
-              title="README"
-              description="Overview, install flow, providers, slash commands, and package links for Clank Code."
-              href="https://github.com/ClankLabs/clank-code/blob/main/README.md"
-              icon="Readme"
-            />
-            <DocCard
-              title="Install Guide"
-              description="Install and launch the terminal coding agent, with shared Clank config support."
-              href="https://github.com/ClankLabs/clank-code/blob/main/docs/INSTALL.md"
-              icon="Install"
-            />
-            <DocCard
-              title="User Guide"
-              description="Sessions, memory, slash commands, and Codex OAuth setup."
-              href="https://github.com/ClankLabs/clank-code/blob/main/docs/USER_GUIDE.md"
-              icon="Usage"
-            />
-            <DocCard
-              title="Architecture"
-              description="Runtime wiring, ReAct loop, providers, tools, config patching, and persistence."
-              href="https://github.com/ClankLabs/clank-code/blob/main/docs/ARCHITECTURE.md"
-              icon="Arch"
-            />
-          </div>
-        </Section>
-
         <Section title="Quick Install">
           <CodeBlock>{`npm install -g @clanklabs/clank
 clank setup
-
-npm install -g @clanklabs/clank-code
-clank-code`}</CodeBlock>
-          <p className="text-[var(--text-muted)] mt-3 text-sm">
-            Use Clank for the full multi-channel harness, or Clank Code for a focused terminal coding workflow.
-          </p>
+clank`}</CodeBlock>
         </Section>
       </div>
       <Footer />
