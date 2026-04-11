@@ -1,5 +1,6 @@
 export const VERSIONS = {
   clank: "1.12.1",
+  clankCode: "0.1.0",
 } as const;
 
 export type AppKey = keyof typeof VERSIONS;
@@ -8,22 +9,23 @@ export const APP_DATA = {
   clank: {
     name: "Clank",
     tagline: "Local-first AI agent harness",
-    description: "A personal AI harness — one daemon, many frontends. Multi-agent, multi-channel (CLI, Web, Telegram, Discord), optimized for local models. Open-source alternative to OpenClaw.",
+    description: "A personal AI harness - one daemon, many frontends. Multi-agent, multi-channel, optimized for local models.",
     color: "build",
     github: "ClankLabs/Clank",
     features: ["Multi-Agent", "Multi-Channel", "Local-First", "Harness", "Plugins"],
   },
+  clankCode: {
+    name: "Clank Code",
+    tagline: "Terminal coding agent",
+    description: "Claude Code-style terminal coding agent with local-first routing, shared config, project memory, and Codex OAuth support.",
+    color: "build",
+    github: "ClankLabs/clank-code",
+    features: ["Coding Agent", "Terminal UI", "Project Memory", "Codex OAuth", "Local-First"],
+  },
 } as const;
 
-export function getDownloadUrl(app: AppKey, type: "installer" | "standalone" = "installer", platform: "windows" | "mac" = "windows"): string {
-  const version = VERSIONS[app];
+export function getDownloadUrl(app: AppKey): string {
   const repo = APP_DATA[app].github;
-
-  // Clank — npm install for now, binary releases later
-  if (app === "clank") {
-    return `https://github.com/${repo}`;
-  }
-
   return `https://github.com/${repo}`;
 }
 
